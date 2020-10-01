@@ -30,24 +30,56 @@ $(document).ready(function() {
 
     //Display the Current Date in the Jumbotron
     $("#currentDay").text(CurrDate);
-
+    
+    var dlySchedule = JSON.parse(localStorage.getItem("dlySchedule"));
     //Go through the textarea and add specific class to reflect the CSS settings
     $(".hour").each(function(){
-        console.log(this);
-        console.log(parseInt($(this).attr("value")));
 
-        if (parseInt($(this).attr("value")) < CurrTime) {
+        var hourValue = parseInt($(this).attr("value"));
+        if (hourValue < CurrTime) {
             $(this).addClass("past");
-        } else if(parseInt($(this).attr("value")) > CurrTime){
+        } else if(hourValue > CurrTime){
             $(this).addClass("future");
         } else {
             $(this).addClass("present");
         }
+        /*
+        if (parseInt(dlySchedule.hrBlock) == hourValue){
+            $(this).val(dlySchedule.desc);
+        }*/
     })
 
     //Save Btn click - save the description into localstorage for future 
     $(".saveBtn").on("click",function(){
+        var btnValue = parseInt($(this).attr("value"));
+        var dlySchedule = [
+            {hrBlock: 9, desc: ""},
+            {hrBlock: 10, desc: ""},
+            {hrBlock: 11, desc: ""},    
+            {hrBlock: 12, desc: ""},
+            {hrBlock: 13, desc: ""},
+            {hrBlock: 14, desc: ""},
+            {hrBlock: 15, desc: ""},
+            {hrBlock: 16, desc: ""},
+            {hrBlock: 17, desc: ""}
+        ]
+                
+
+        $(".hour").each(function(){
+            var hourValue = parseInt($(this).attr("value"));
+            if (hourValue == btnValue) {
+                alert("saving info to local storage");
+                dlySchedule.hrBlock = btnValue;
+                alert("this desc value " + $(this).val());
+                dlySchedule.desc = $(this).val();
+                var saveArrIndex = btnValue - 9;
+                console.log(saveArrIndex);
+                localStorage.setItem("dlySchedule", JSON.stringify(dlySchedule[saveArrIndex]));
+            }
+        })
 
     })
+
+
 
 })
