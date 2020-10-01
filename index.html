@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Assets/style/style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+      <!-- 9am-->
+      <div class="row">
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-1">
+          <label class = "time-block" value="9">9 AM</label>
+        </div>
+        <div class="col-lg-8 no-padding">
+          <textarea class = "hour description" value="9"></textarea>
+        </div>
+        <div class="col-lg-2">
+          <button class="saveBtn" value="9">save</button>
+        </div>
+      </div>
+      <!--10am-->
+      <div class="row">
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-1">
+          <label class= "time-block" value="10">10 AM</label>
+        </div>
+        <div class="col-lg-8 no-padding">
+          <textarea class = "hour description" value="10"></textarea>
+        </div>
+        <div class="col-lg-2">
+          <button class="saveBtn" value="10">save</button>
+        </div>
+      </div>
+      <!--11am-->
+      <div class="row">
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-1">
+          <label class= "time-block" value="11">11 AM</label>
+        </div>
+        <div class="col-lg-8 no-padding">
+          <textarea class = "hour description" value="11"></textarea>
+        </div>
+        <div class="col-lg-2">
+          <button class="saveBtn">save</button>
+        </div>
+      </div>
+      <!--12pm-->
+      <div class="row">
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-1">
+          <label class= "time-block" value="12">12 PM</label>
+        </div>
+        <div class="col-lg-8 no-padding">
+          <textarea class = "hour description" value="12"></textarea>
+        </div>
+        <div class="col-lg-2">
+          <button class="saveBtn" value="12">save</button>
+        </div>
+      </div>
+      <!--1pm-->
+      <div class="row">
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-1">
+          <label class= "time-block" value="13">1 PM</label>
+        </div>
+        <div class="col-lg-8 no-padding">
+          <textarea class = "hour description" value="13"></textarea>
+        </div>
+        <div class="col-lg-2">
+          <button class="saveBtn" value="13">save</button>
+        </div>
+      </div>
+      <!--2pm-->
+      <div class="row">
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-1">
+          <label class= "time-block" value="14">2 PM</label>
+        </div>
+        <div class="col-lg-8 no-padding">
+          <textarea class = "hour description" value="14"></textarea>
+        </div>
+        <div class="col-lg-2">
+          <button class="saveBtn" value="14">save</button>
+        </div>
+      </div>
+      <!--3pm-->
+      <div class="row">
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-1">
+          <label class= "time-block" value="15">3 PM</label>
+        </div>
+        <div class="col-lg-8 no-padding">
+          <textarea class = "hour description" value="15"></textarea>
+        </div>
+        <div class="col-lg-2">
+          <button class="saveBtn" value="15">save</button>
+        </div>
+      </div>
+      <!--4pm-->
+      <div class="row">
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-1">
+          <label class= "time-block" value="16">4 PM</label>
+        </div>
+        <div class="col-lg-8 no-padding">
+          <textarea class = "hour description" value="16"></textarea>
+        </div>
+        <div class="col-lg-2">
+          <button class="saveBtn" value="16">save</button>
+        </div>
+      </div>
+      <!--5pm-->
+      <div class="row">
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-1">
+          <label class = "time-block" value="17">5 PM</label>
+        </div>
+        <div class="col-lg-8 no-padding">
+          <textarea class = "hour description" value="17"></textarea>
+        </div>
+        <div class="col-lg-2">
+          <button class="saveBtn" value="17">save</button>
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./Assets/js/scheduler.js"></script>
+  </body>
+</html>
