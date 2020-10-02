@@ -33,6 +33,24 @@ Future hour timeblock is coded - Green
 ```
 ![day planner screenshot](./Assets/DayScheduler_Screenshot.png)
 
+## Tools and Techniques used
+```
+1) Bootstrap CDN
+2) Moment.js for date functions
+3) JQuery for dynamically building HTML elements
+4) Local Storage for saving the messages
+
+```
+
+## Credits
+```
+1) Bootstrap CDN
+2) Moment.js
+3) JQuery team
+4) Google FU
+5) StackOverflow
+```
+
 ## URL of the application
 
 * The URL of the deployed application - https://meenaambalam.github.io/Day_Scheduler/
