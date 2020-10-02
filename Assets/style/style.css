@@ -4,15 +4,20 @@ body {
   line-height: 1;
 }
 
+.container{
+  margin-left: 10%;
+}
+
 textarea{
-  width:100%; /*Meena added thos */
+  width:100%;
   background: transparent;
   border: none;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
-  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .jumbotron {
@@ -28,50 +33,50 @@ textarea{
 }
 
 .time-block{
-  /*width:100%; /*Meena added*/
   text-align: center;
   border-radius: 15px;
   margin: 0 auto;
+  padding: 0px;
 }
 
 .row {
-  /*white-space: pre-wrap;*/
+  white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
 }
 
 .hour {
-  /*background-color: #ffffff;*/
-  background-color:white;
+  background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
 }
 
 .past {
   background-color: #d3d3d3;
-  color: white;
+  color: black;
 }
 
 .present {
   background-color: #ff6961;
-  color: white;
+  color: black;
 }
 
 .future {
   background-color: #77dd77;
-  color: white;
+  color: black;
 }
 
 .saveBtn {
-  width: 45%;
-  height: 70%;
+  width: 50px;
+  height: 55px;
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
-  margin: 0 auto;
+  margin-left: 0px;
   padding-left: 0px;
+  
 }
 
 .saveBtn i:hover {
