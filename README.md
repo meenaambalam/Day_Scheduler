@@ -26,9 +26,11 @@ When the user runs this application in the browser,
 ```
 
 ## Screenshot of the application  - notice the color coding of the timeblock
-
-The following animation demonstrates the application functionality:
-
+```
+Past hour timeblocks are coded - Gray
+Present hour timeblock is coded - Orange
+Future hour timeblock is coded - Green
+```
 ![day planner screenshot](./Assets/DayScheduler_Screenshot.png)
 
 ## URL of the application
