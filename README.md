@@ -37,5 +37,5 @@ Future hour timeblock is coded - Green
 
 * The URL of the deployed application - https://meenaambalam.github.io/Day_Scheduler/
 
-* The URL of the GitHub repository - https://github.com/meenaambalam/Quiz_Master
+* The URL of the GitHub repository - https://github.com/meenaambalam/Day_Scheduler
 
