@@ -46,7 +46,6 @@ Future hour timeblock is coded - Green
 ```
 1) Bootstrap CDN
 2) Moment.js
-3) JQuery team
 4) Google FU
 5) StackOverflow
 ```
