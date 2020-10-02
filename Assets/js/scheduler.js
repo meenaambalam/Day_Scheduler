@@ -81,7 +81,7 @@ $(document).ready(function() {
         //dynamically create variable for getting back data from local storage
         dlyScheduleHr = "dlySchedule" + hourValue;
         dlyScheduleDesc = localStorage.getItem(dlyScheduleHr);
-        CurrHr = 9;
+    
         //color coding of time blocks
         if (hourValue < CurrHr) {
             $(this).addClass("past");

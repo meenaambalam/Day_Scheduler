@@ -33,7 +33,7 @@ The following animation demonstrates the application functionality:
 
 ## URL of the application
 
-* The URL of the deployed application - 
+* The URL of the deployed application - https://meenaambalam.github.io/Day_Scheduler/
 
 * The URL of the GitHub repository - https://github.com/meenaambalam/Quiz_Master
 
