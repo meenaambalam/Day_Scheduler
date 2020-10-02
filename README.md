@@ -1,46 +1,39 @@
-# 05 Third-Party APIs: Work Day Scheduler
-
-Create a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
-
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
-
-## User Story
+# Day_Scheduler
+```
+Day Scheduler allows users to save events for each hour of th day.
 
 ```
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
 
-## Acceptance Criteria
+## Description
 
 ```
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
+People with busy schedule can use this application to add important events to the daily planner, so that they can manage their time effectively
+
 ```
+
+## Working of the Application
+```
+When the user runs this application in the browser, 
+
+1) The current date will be displayed as part of the header
+2) The timeblocks they will be able to view and update is from 7AM to 8PM. With a very minor change in the application, it is possible to change the hourly timeblock to different range
+3) Each timeblock also will be color coded to indicate whether this is in the past, present, or future
+4) When the timeblock is clicked, then can enter an event
+5) Unless the SAVE button is explicitly clicked, the entered event will not be saved
+6) Once the event is saved, the information will persist whenever they run the application
+7) If the user wants to delete that entry, they have to go back to that timeblock and delete the information and resave it.
+
+```
+
+## Screenshot of the application  - notice the color coding of the timeblock
 
 The following animation demonstrates the application functionality:
 
-![day planner demo](./Assets/05-third-party-apis-homework-demo.gif)
+![day planner screenshot](./Assets/DayScheduler_Screenshot.png)
 
-## Review
+## URL of the application
 
-You are required to submit the following for review:
+* The URL of the deployed application - https://meenaambalam.github.io/Day_Scheduler/
 
-* The URL of the deployed application.
+* The URL of the GitHub repository - https://github.com/meenaambalam/Quiz_Master
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
